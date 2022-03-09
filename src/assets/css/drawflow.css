@@ -1,0 +1,40 @@
+.drawflow .drawflow-node{
+    background-color:var(--background-color);
+    border:1px solid var(--fd-border-color);
+}
+.drawflow .drawflow-node.selected{
+    background-color:var(--curr-bg-color);
+    border:1px solid var(--curr-color);
+}
+.drawflow .connection .main-path{
+    stroke-width:2px;
+    stroke:var(--curr-color);
+}
+.drawflow .drawflow-node .input,
+.drawflow .drawflow-node .output{
+    width:16px; height:16px; border:1px solid var(--fd-border-color);
+    background-color:var(--background-color);
+}
+.drawflow .drawflow-node .input{left:-23px;}
+.drawflow .drawflow-node .output{right:-7px;}
+.drawflow .drawflow-node.selected .input,
+.drawflow .drawflow-node.selected .output{border:1px solid var(--curr-color);}
+.drawflow-delete{background-color:var(--danger-color); font-family: "微軟正黑體 Light"; line-height:24px; font-weight:600;}
+.fd-inputs, .fd-outputs, .fd-handle{font-size:14px; color:var(--text-color);}
+
+.fd-top{height:60px; border-bottom:1px solid var(--border-color);}
+.df-box{display:flex; align-items:flex-start; justify-content:space-between; height:calc(100% - 60px);}
+.df-left{width:200px; border-right:1px solid var(--border-color); padding:10px;}
+.df-item-box ul{padding:10px 0px;}
+.df-item-box li{font-size:14px; padding:6px 10px; margin-bottom:10px; width:100%; cursor:all-scroll; border:1px solid var(--border-color);}
+#data-factory{
+    width:calc(100% - 200px);
+    background-size: 25px 25px;
+    background-image: linear-gradient(to right, #f1f1f1 1px, transparent 1px), linear-gradient(to bottom, #f1f1f1 1px, transparent 1px);
+}
+.df-save{
+    position:absolute; top:10px; right:10px; padding:5px 10px;
+    background-color:var(--background-color); font-size:14px;
+    border:1px solid var(--border-color);
+    border-radius:3px; cursor:pointer; z-index:2;
+}
