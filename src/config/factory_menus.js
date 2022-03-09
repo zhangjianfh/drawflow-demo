@@ -9,10 +9,11 @@ let factoryMenus = [
   {
     name:'数据处理',
     children:[
-      {name:'处理-1', type:'handles'},
-      {name:'处理-2', type:'handles'},
-      {name:'处理-3', type:'handles'},
-      {name:'处理-4', type:'handles'},
+      {name:'连接处理', type:'handles', component:'HandleConnection'},
+      {name:'合并处理', type:'handles', component:'HandleMerge'},
+      {name:'合并汇总', type:'handles', component:'HandleMergeGather'},
+      {name:'筛选处理', type:'handles', component:'HandleFilter'},
+      {name:'字段处理', type:'handles', component:'HandleField'}
     ]
   }
 ]
